@@ -166,9 +166,21 @@ f = open(pageSource, 'r')
 lines = f.readlines()
 
 
-s = lines[0]
+
+for i in range(len(lines)):
+    line = lines[i]
+    b = line.split("\"")
  
-l = s.split('><');
+    for j in range(len(b)):
+        if ".png" in b[j]:
+            c = b[j].split("?")
+            for k in range(len(c)):
+                if ".png" in c[k]:
+                    print c[k]
+                    pngSave(c[k])
+            
+"""
+l = s.split("\"");
 
 for i in range(len(l)) :    
    if ".png" in l[i]:
@@ -177,5 +189,5 @@ for i in range(len(l)) :
             if ".png" in a[j]: 
                 print a[j]
                 pngSave(a[j])
-                
+                """
 f.close();
