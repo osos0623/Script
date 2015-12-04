@@ -179,15 +179,4 @@ for i in range(len(lines)):
                     print c[k]
                     pngSave(c[k])
             
-"""
-l = s.split("\"");
-
-for i in range(len(l)) :    
-   if ".png" in l[i]:
-        a = l[i].split("\"")
-        for j in range(len(a)):
-            if ".png" in a[j]: 
-                print a[j]
-                pngSave(a[j])
-                """
 f.close();
