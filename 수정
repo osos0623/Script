@@ -148,8 +148,15 @@ class Page(object):
 count = 0
 import os
 
-if 'jpg' not in os.listdir() :
+if os.path.exists('jpg') :
+    pass
+else:
     os.mkdir('jpg')
+
+if os.path.exists('png') :
+    pass
+else:
+    os.mkdir('png')
 
 
 def pngSave(url):
