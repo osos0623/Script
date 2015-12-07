@@ -207,17 +207,5 @@ for i in range(len(lines)):
             
 
 print count
-
           
-"""
-l = s.split("\"");
-
-for i in range(len(l)) :    
-   if ".png" in l[i]:
-        a = l[i].split("\"")
-        for j in range(len(a)):
-            if ".png" in a[j]: 
-                print a[j]
-                pngSave(a[j])
-               """ 
 f.close();
