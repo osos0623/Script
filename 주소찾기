@@ -146,7 +146,6 @@ class Page(object):
 
 
 count = 0
-import os
 
 if os.path.exists('jpg') :
     pass
