@@ -175,7 +175,7 @@ def jpgSave(url):
             count += 1
     except:
         pass
-    
+ 
 
 
 page = Page("", "")
@@ -199,7 +199,7 @@ for i in range(len(lines)):
         if ".png" in b[j]:
             c = b[j].split("?")
             for k in range(len(c)):
-                    pngSave(c[k])
+                pngSave(c[k])
         if ".jpg" in b[j]:
             c = b[j].split("?")
             for k in range(len(c)):
@@ -208,7 +208,7 @@ for i in range(len(lines)):
 
 print count
 
-            
+          
 """
 l = s.split("\"");
 
@@ -219,5 +219,5 @@ for i in range(len(l)) :
             if ".png" in a[j]: 
                 print a[j]
                 pngSave(a[j])
-                """
+               """ 
 f.close();
